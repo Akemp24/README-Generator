@@ -8,6 +8,21 @@ const questions = [
         message:'What is the title?',
         name:'READMe Title',
     }
+    {
+        type:'input',
+        message:'Please type your description.',
+        name:'description',
+    }
+    {
+        type:'input',
+        message:'What is your github username?',
+        name:'github',
+    }
+    {
+        type:'input',
+        message:'What is your email?',
+        name:'email',
+    }
 ];
 
 // TODO: Create a function to write README file
