@@ -15,6 +15,26 @@ const questions = [
     }
     {
         type:'input',
+        message:'What are the installation instructions?',
+        name:'installation',
+    }
+    {
+        type:'input',
+        message:'What is the usage of the app?',
+        name:'usage',
+    }
+    {
+        type:'input',
+        message:'What are the credits?',
+        name:'credits',
+    }
+    {
+        type:'input',
+        message:'What are the features?',
+        name:'features',
+    }
+    {
+        type:'input',
         message:'What is your github username?',
         name:'github',
     }
