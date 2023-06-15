@@ -10,7 +10,10 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  
+  if (license && license !== 'None') {
+    return `This application is covered under the [${license}](https://choosealicense.com/licenses/${license}/) license.`;
+  }
+  return '';
 }
 
 // TODO: Create a function that returns the license section of README
