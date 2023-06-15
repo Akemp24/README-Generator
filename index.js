@@ -29,6 +29,12 @@ const questions = [
         name:'credits',
     }
     {
+        type:'list',
+        message:'Pick a option for the license?',
+        choices:['MIT', 'None']
+        name:'license',
+    }
+    {
         type:'input',
         message:'What are the features?',
         name:'features',
@@ -57,7 +63,14 @@ function writeToFile(fileName, data) {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((data) => {
+        const markdown = generateMarkdown(data);
+        writeToFile('README.md', markdown);
+    }).catch((error) => {
+        console.log('Cannot initialize application', error);
+    });
+}
 
 // Function call to initialize app
 init();
